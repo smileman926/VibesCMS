@@ -1,0 +1,3 @@
+Simply upload the file smfmod.php to your server/hosting account in the root of your cms install
+(near load.php) via ftp and visit it in a browser.
+

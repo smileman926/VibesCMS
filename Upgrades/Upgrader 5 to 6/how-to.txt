@@ -1,0 +1,16 @@
+Thank you for your interest in PHPVibe!
+
+Upload SQL upgrader v5-v6/dbupgrade.php to your server, the file should be placed in your cms's root
+in the same folder as load.php file.
+Open www.yourdomain.com/dbupgrade.php (type your domain correctly) and the file should inform on applying some queries.
+
+Now the database of PHPVibe v5 is upgraded to PHPVibes v6
+
+You just need the file uploads and the storage changes.
+
+Storage paths changes are as follows:
+
+/media -> /storage/media/
+/cache -> /storage/
+/lib/langs/ -> /storage/langs/
+/uploads/ -> /storage/uploads/

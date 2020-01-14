@@ -1,0 +1,11 @@
+Thank you for upgrading to v5.93
+
+BEFORE you upgrade PLEASE:
+1. Backup!!!
+
+This small path fixes:
+- Album link in single image
+- Thumbfix resizer
+
+
+

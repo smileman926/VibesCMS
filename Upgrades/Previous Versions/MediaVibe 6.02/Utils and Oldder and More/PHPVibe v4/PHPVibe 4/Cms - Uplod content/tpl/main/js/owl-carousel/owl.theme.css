@@ -1,0 +1,122 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	
+	opacity: 0.4;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme:hover .owl-controls.clickable .owl-buttons div, .owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+.owl-pagination {
+display:none;
+height:0;
+width:0;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+bottom: 10px;
+background: #fff;
+border: none;
+width: 40px;
+border: 1px solid #e3e3e3;
+box-shadow: 1px 1px 3px rgba(0,0,0,.1);
+height: 60px;
+top: 50%;
+color:#000;
+outline: 0;
+font-weight: bold;
+font-size: 11px;
+text-decoration: none;
+white-space: nowrap;
+word-wrap: normal;
+line-height: normal;
+vertical-align: middle;
+cursor: pointer;
+border-radius: 2px;
+text-align:center;
+}
+.owl-theme .owl-controls .owl-buttons div i {
+display:block;
+font-size:14px;
+padding:20px 0;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -17px;
+  top: 55px; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -17px;
+  top: 55px;
+}
+
+.loop-content.owl-carousel {
+border-bottom-style:solid;border-bottom-width:1px;border-color:#ededed;
+}

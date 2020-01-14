@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Easy Video Player</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<script type="text/javascript" src="java/FWDEVPlayer.js"></script>
+		
+		<!-- Setup audio player-->
+		<script type="text/javascript">
+			FWDEVPUtils.onReady(function(){
+
+				FWDEVPlayer.useYoutube = "yes";
+				FWDEVPlayer.videoStartBehaviour = "stop";
+				
+				new FWDEVPlayer({		
+					//main settings
+					instanceName:"player1",
+					parentId:"myDiv",
+					mainFolderPath:"content",
+					skinPath:"minimal_skin_dark",
+					displayType:"fullscreen",
+					facebookAppId:"213684265480896",
+					videoSourcePath:"content/videos/desktop.mp4, content/videos/mobile.mp4",
+					posterPath:"content/posters/mp4-poster.jpg, content/posters/mp4-poster-mobile.jpg",
+					showContextMenu:"yes",
+					addKeyboardSupport:"yes",
+					autoPlay:"no",
+					loop:"no",
+					maxWidth:600,
+					maxHeight:380,
+					volume:.8,
+					backgroundColor:"#000000",
+					posterBackgroundColor:"#0099FF",
+					//logo settings
+					showLogo:"yes",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoMargins:5,
+					//controller settings
+					showControllerWhenVideoIsStopped:"yes",
+					showVolumeScrubber:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showYoutubeQualityButton:"yes",
+					showFacebookButton:"yes",
+					showEmbedButton:"yes",
+					showFullScreenButton:"yes",
+					repeatBackground:"yes",
+					controllerHeight:41,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:7,
+					spaceBetweenButtons:8,
+					scrubbersOffsetWidth:4,
+					timeOffsetLeftWidth:5,
+					timeOffsetRightWidth:3,
+					volumeScrubberWidth:80,
+					volumeScrubberOffsetRightWidth:0,
+					timeColor:"#888888",
+					youtubeQualityButtonNormalColor:"#888888",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					//embed window
+					embedWindowCloseButtonMargins:0,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#a1a1a1",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF"
+				});				
+				
+				new FWDEVPlayer({		
+					//main settings
+					instanceName:"player2",
+					parentId:"myDiv2",
+					mainFolderPath:"content",
+					skinPath:"minimal_skin_dark",
+					displayType:"fullscreen",
+					facebookAppId:"213684265480896",
+					videoSourcePath:"content/videos/desktop.mp4, content/videos/mobile.mp4",
+					posterPath:"content/posters/mp4-poster.jpg, content/posters/mp4-poster-mobile.jpg",
+					showContextMenu:"yes",
+					addKeyboardSupport:"yes",
+					autoPlay:"no",
+					loop:"no",
+					maxWidth:600,
+					maxHeight:380,
+					volume:.8,
+					backgroundColor:"#000000",
+					posterBackgroundColor:"#0099FF",
+					//logo settings
+					showLogo:"yes",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoMargins:5,
+					//controller settings
+					showControllerWhenVideoIsStopped:"yes",
+					showVolumeScrubber:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showYoutubeQualityButton:"yes",
+					showFacebookButton:"yes",
+					showEmbedButton:"yes",
+					showFullScreenButton:"yes",
+					repeatBackground:"yes",
+					controllerHeight:41,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:7,
+					spaceBetweenButtons:8,
+					scrubbersOffsetWidth:4,
+					timeOffsetLeftWidth:5,
+					timeOffsetRightWidth:3,
+					volumeScrubberWidth:80,
+					volumeScrubberOffsetRightWidth:0,
+					timeColor:"#888888",
+					youtubeQualityButtonNormalColor:"#888888",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					//embed window
+					embedWindowCloseButtonMargins:0,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#a1a1a1",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF"
+				});				
+			});
+		</script>
+	</head>
+
+	<body style="background-color:#aaaaaa;">	
+		<div id="myDiv" style="margin:auto;"></div>
+		<div id="myDiv2" style="margin:auto; margin-top:20px;"></div>
+	</body>
+</html>
+
+
+
+

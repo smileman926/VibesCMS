@@ -1,0 +1,23 @@
+Thank you for your interest in PHPVibe!
+
+This is patch 5.10 addressing some of the issues reported:
+
+- Adds full cache with html minify (defaults off from config file)
+- Adds an gzip support via .htaccess (needs rename to .htaccess)
+- Fixes bugs and issues
+- Unhides "Unpublished images"
+
+To apply the patch follow the steps:
+- Simply upload the folder's content and overwrite the existing files.
+- CHMOD /cache/html/ to writeable.
+- Enable Full cache by editing vibe_config.php 
+  $killcache = true; /* Enable/Disable full cache */
+to
+  $killcache = false; /* Enable/Disable full cache */
+ - Add gzip support by backing up your .htaccess and renaming .htaccess_gzip to .htaccess 
+
+
+Important notes: 
+- Always backup first
+FOR OLDER SITES with modified files:
+- Compare files before applying the patch

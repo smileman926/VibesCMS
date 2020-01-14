@@ -1,0 +1,8 @@
+Thank you for upgrading to v5.9
+
+BEFORE you upgrade PLEASE:
+1. Backup!!!
+2. Several vital files are being overwriten, including the main css files 
+(pay attention, use a file compare if you have custom changes).
+3. Apply the 5.9 patch AFTER the previous patches (Utils & More -> Upgrades)
+

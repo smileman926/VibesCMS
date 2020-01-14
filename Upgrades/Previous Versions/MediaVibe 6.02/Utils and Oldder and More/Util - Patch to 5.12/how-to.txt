@@ -1,0 +1,12 @@
+Thank you for your interest in PHPVibe!
+
+This is patch 5.12 (includes 5.11) addressing some of the issues and bugs reported.
+
+
+To apply the patch follow the steps:
+- Simply upload the folder's content and overwrite the existing files.
+
+Important notes: 
+- Always backup first
+FOR OLDER SITES with modified files:
+- Compare files before applying the patch

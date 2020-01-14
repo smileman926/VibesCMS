@@ -1,0 +1,39 @@
+Edit: Added a few more changes in v5.21
+Affected files:
+- index.php and  /moderator/sef.php
+Changed default permalinks for category and channels, removed :section for 404 removal.
+You can also do this in Settings- > Permalinks, remove :Section from the Category and Profile urls.
+
+
+
+Thank you for upgrading to v5.2
+
+BEFORE you upgrade PLEASE:
+1. Backup
+2. Export your language files and place them safely on your hardrive.
+IF YOU DON'T YOU WILL LOOSE YOUR LANGUAGES! 
+3. phpvibe_app.js is overwriten for a small change in the loader (just seconds)
+you may want to protect your original one (or reverse it from the backup) if it has changes.
+
+v5.20 will move the languages from the database to .json files to reduce server load on the sql.
+
+More changes:
+- Added hash ids (like Youtube) for main media page's ids.
+- Added Flexbox as images lightbox
+- Added "required" to edit form's title.
+- Improved some cached queries
+- Html cache improvements
+- Started optimizing some code for the v6 upgrade
+  Split code to new files (from functions to functions.permalinks.php)
+- Fixed a sidebar notice for no colections.
+- Changed some links in providers from http to https  
+- Improved thumb_fix to detect links starting with "//"
+- Changed the homeloader time to lower value (This made many think the website is slow :) )
+
+On https:
+A quick sql fix for the users having issues on https with some thumbs:
+Run this video phpmyadmin, replace vibe_ with your existing prefix.
+update vibe_videos
+set thumb = replace(thumb, 'http://', '//');
+update vibe_users
+set avatar = replace(avatar, 'http://', '//');

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>test</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<script type="text/javascript" src="../js/FWDEVPData.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPlayer.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPVideoScreen.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPComplexButton.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPContextMenu.js"></script>
+		<script type="text/javascript" src="../js/FWDConsole.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPController.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPDisplayObject.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPEventDispatcher.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPInfo.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPTweenMax.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPPreloader.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPVolumeButton.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPUtils.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPFlashTest.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPPoster.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPSimpleButton.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPTransformDisplayObject.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPHider.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPYoutubeScreen.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPFacebookShare.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPYTBQButton.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPLogo.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPEmbedWindow.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPFlashButton.js"></script>
+		<script type="text/javascript" src="../js/FWDEVPSimpleSizeButton.js"></script>
+		
+		
+		<!-- Setup audio player-->
+		<script type="text/javascript">
+			FWDConsole.setPrototype();
+			var logger =  new FWDConsole();
+
+			FWDEVPUtils.onReady(function(){
+
+				FWDEVPlayer.useYoutube = "yes";
+				FWDEVPlayer.videoStartBehaviour = "stop";
+				
+				new FWDEVPlayer({		
+					//main settings
+					instanceName:"player1",
+					parentId:"myDiv",
+					mainFolderPath:"content",
+					skinPath:"minimal_skin_dark",
+					displayType:"responsive",
+					facebookAppId:"213684265480896",
+					videoSourcePath:"content/videos/desktop.mp4, content/videos/mobile.mp4",
+					posterPath:"content/posters/mp4-poster.jpg, content/posters/mp4-poster-mobile.jpg",
+					showContextMenu:"yes",
+					addKeyboardSupport:"yes",
+					autoPlay:"no",
+					loop:"no",
+					maxWidth:600,
+					maxHeight:380,
+					volume:.8,
+					backgroundColor:"#000000",
+					posterBackgroundColor:"#0099FF",
+					//logo settings
+					showLogo:"yes",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoMargins:5,
+					//controller settings
+					showControllerWhenVideoIsStopped:"yes",
+					showVolumeScrubber:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showYoutubeQualityButton:"yes",
+					showFacebookButton:"yes",
+					showEmbedButton:"yes",
+					showFullScreenButton:"yes",
+					repeatBackground:"yes",
+					controllerHeight:41,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:7,
+					spaceBetweenButtons:8,
+					scrubbersOffsetWidth:4,
+					timeOffsetLeftWidth:5,
+					timeOffsetRightWidth:3,
+					volumeScrubberWidth:80,
+					volumeScrubberOffsetRightWidth:0,
+					timeColor:"#888888",
+					youtubeQualityButtonNormalColor:"#888888",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					//embed window
+					embedWindowCloseButtonMargins:0,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#a1a1a1",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF"
+				});
+				
+				new FWDEVPlayer({		
+					//main settings
+					instanceName:"player2",
+					parentId:"myDiv2",
+					mainFolderPath:"content",
+					skinPath:"minimal_skin_dark",
+					displayType:"responsive",
+					facebookAppId:"213684265480896",
+					videoSourcePath:"_u3BRY2RF5I",
+					posterPath:"none",
+					showContextMenu:"yes",
+					addKeyboardSupport:"yes",
+					autoPlay:"no",
+					loop:"no",
+					maxWidth:600,
+					maxHeight:380,
+					volume:.8,
+					backgroundColor:"#000000",
+					posterBackgroundColor:"#0099FF",
+					//logo settings
+					showLogo:"yes",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoMargins:5,
+					//controller settings
+					showControllerWhenVideoIsStopped:"yes",
+					showVolumeScrubber:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showYoutubeQualityButton:"yes",
+					showFacebookButton:"yes",
+					showEmbedButton:"yes",
+					showEmbedButton:"yes",showFullScreenButton:"yes",
+					repeatBackground:"yes",
+					controllerHeight:41,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:7,
+					spaceBetweenButtons:8,
+					scrubbersOffsetWidth:4,
+					timeOffsetLeftWidth:5,
+					timeOffsetRightWidth:3,
+					volumeScrubberWidth:80,
+					volumeScrubberOffsetRightWidth:0,
+					timeColor:"#888888",
+					youtubeQualityButtonNormalColor:"#888888",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					//embed window
+					embedWindowCloseButtonMargins:0,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#a1a1a1",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF"
+				});
+				
+				/*
+				new FWDEVPlayer({		
+					//main settings
+					instanceName:"player3",
+					parentId:"myDiv3",
+					mainFolderPath:"content",
+					skinPath:"clasic_skin_dark",
+					displayType:"responsive",
+					facebookAppId:"213684265480896",
+					videoSourcePath:"content/videos/desktop.mp4, content/videos/mobile.mp4",
+					posterPath:"content/posters/mp4-poster.jpg, content/posters/mp4-poster-mobile.jpg",
+					showContextMenu:"yes",
+					addKeyboardSupport:"yes",
+					autoPlay:"no",
+					loop:"no",
+					maxWidth:600,
+					maxHeight:380,
+					volume:.8,
+					backgroundColor:"#000000",
+					posterBackgroundColor:"#0099FF",
+					//logo settings
+					showLogo:"yes",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoMargins:5,
+					//controller settings
+					showControllerWhenVideoIsStopped:"yes",
+					showVolumeScrubber:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showYoutubeQualityButton:"yes",
+					showFacebookButton:"yes",
+					showEmbedButton:"yes",showFullScreenButton:"yes",
+					repeatBackground:"no",
+					controllerHeight:41,
+					controllerHideDelay:2,
+					startSpaceBetweenButtons:7,
+					spaceBetweenButtons:8,
+					scrubbersOffsetWidth:4,
+					timeOffsetLeftWidth:5,
+					timeOffsetRightWidth:3,
+					volumeScrubberWidth:80,
+					volumeScrubberOffsetRightWidth:0,
+					timeColor:"#888888",
+					youtubeQualityButtonNormalColor:"#888888",
+					youtubeQualityButtonSelectedColor:"#FFFFFF"
+				});
+				
+				new FWDEVPlayer({		
+					//main settings
+					instanceName:"player4",
+					parentId:"myDiv4",
+					mainFolderPath:"content",
+					skinPath:"clasic_skin_dark",
+					displayType:"responsive",
+					facebookAppId:"213684265480896",
+					videoSourcePath:"_u3BRY2RF5I",
+					posterPath:"content/posters/youtube-poster.jpg",
+					showContextMenu:"yes",
+					addKeyboardSupport:"yes",
+					autoPlay:"no",
+					loop:"no",
+					maxWidth:600,
+					maxHeight:380,
+					volume:.8,
+					backgroundColor:"#000000",
+					posterBackgroundColor:"#0099FF",
+					//logo settings
+					showLogo:"yes",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoMargins:5,
+					//controller settings
+					showControllerWhenVideoIsStopped:"yes",
+					showVolumeScrubber:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showYoutubeQualityButton:"yes",
+					showFacebookButton:"yes",
+					showEmbedButton:"yes",showFullScreenButton:"yes",
+					repeatBackground:"no",
+					controllerHeight:41,
+					controllerHideDelay:2,
+					startSpaceBetweenButtons:7,
+					spaceBetweenButtons:8,
+					scrubbersOffsetWidth:4,
+					timeOffsetLeftWidth:5,
+					timeOffsetRightWidth:3,
+					volumeScrubberWidth:80,
+					volumeScrubberOffsetRightWidth:0,
+					timeColor:"#888888",
+					youtubeQualityButtonNormalColor:"#888888",
+					youtubeQualityButtonSelectedColor:"#FFFFFF"
+				});
+				*/
+				registerAPI();
+			});
+			
+			//Register API (an setInterval is required because the player is not available until the youtube API is loaded).
+			var registerAPIInterval;
+			function registerAPI(){
+				clearInterval(registerAPIInterval);
+				if(window.player1){
+					player1.addListener(FWDEVPlayer.READY, readyHandler);
+					player1.addListener(FWDEVPlayer.PLAY, playHandler);
+					player1.addListener(FWDEVPlayer.PAUSE, pauseHandler);
+					player1.addListener(FWDEVPlayer.STOP, stopHandler);
+					player1.addListener(FWDEVPlayer.UPDATE_VIDEO_SOURCE, updateVideoSourceHandler);
+					player1.addListener(FWDEVPlayer.UPDATE_POSTER_SOURCE, updatePosterSourceHandler);
+				}else{
+					registerAPIInterval = setInterval(registerAPI, 100);
+				}
+			};
+
+			//API event listeners examples
+			function readyHandler(e){
+				//console.log("API -- ready to use");
+			}
+
+			function playHandler(e){
+				//console.log("API -- play");
+			}
+
+			function pauseHandler(e){
+				//console.log("API -- pause");
+			}
+
+			function stopHandler(e){
+				//console.log("API -- stop");
+			}
+
+			function updateVideoSourceHandler(e){
+				//console.log("API -- video source update: " + player1.getVideoSource());
+			}
+
+			function updatePosterSourceHandler(e){
+				//console.log("API -- video source update: " + player1.getPosterSource());
+			}
+
+			//API methods examples
+			function play(){
+				player1.play();
+			}
+
+			function pause(){
+				player1.pause();
+			}
+
+			function stop(){
+				player1.stop();
+			}
+
+			function scrub(percent){
+				player1.scrub(percent);
+			}
+
+			function setVolume(percent){
+				player1.setVolume(percent);
+			}
+
+			function goFullScreen(){
+				player1.goFullScreen();
+			}
+
+			function setPosterSource(){
+				player1.setPosterSource("content/posters/youtube-poster.jpg");
+			}
+			
+			function setYoutubeSource(){
+				player1.setVideoSource("_u3BRY2RF5I");
+			}
+
+			function setMp4Source(){
+				player1.setVideoSource("content/videos/desktop.mp4");
+			}
+
+		</script>
+		
+	</head>
+
+	<body style="background-color:#aaaaaa; padding:0px; margin:0px;">	
+	
+		<div id="myDiv" style="float:left; position:relative; left:0px; top:0px;"></div>
+		<div id="myDiv2" style="float:left;"></div>
+		<div id="myDiv3" style="float:left;"></div>
+		<div id="myDiv4" style="float:left;"></div>
+		<div id="myDiv5" style="float:left;"></div>
+		<div id="myDiv6" style="float:left;"></div>
+		
+		<button type="button" onclick="play()">play</button>
+		<button type="button" onclick="pause()">pause</button>
+		<button type="button" onclick="stop()">stop</button>
+		<button type="button" onclick="scrub(.5)">scrub to half</button>
+		<button type="button" onclick="setVolume(.5)">set volume to half</button>
+		<button type="button" onclick="goFullScreen(.5)">go full screen</button>
+		<button type="button" onclick="setPosterSource()">set poster source</button>
+		<button type="button" onclick="setYoutubeSource()">set youtube source</button>
+		<button type="button" onclick="setMp4Source()">set mp4 source</button>
+	</body>
+</html>
+
+
+
+

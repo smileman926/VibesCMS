@@ -1,0 +1,12 @@
+Thank you for upgrading to v5.91
+
+BEFORE you upgrade PLEASE:
+1. Backup!!!
+
+This small path fixes:
+- NSFW links (old format removed)
+- Videocron not fireying on SQL Safe mode db
+- Improves dislike behavior
+- Fixes link to create playlist form media page  (old format removed)
+
+

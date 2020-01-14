@@ -1,0 +1,19 @@
+Thank you for your interest in PHPVibe!
+
+This is patch 5.09 addressing some of the issues reported:
+
+- Upgrades Facebook login SDK
+- Upgrades Google login SDK
+- Prevents registration without a recaptcha 
+- Fixes Maintenance switcher in Admin's Settings 
+(For non-admins, in the event of a locked out please use Utilities -> Maintenance disabler)
+
+To apply the patch follow the 2 steps:
+- Remove the folders fb and google in /lib/ folder (to avoid conflicts).
+- Simply upload the folder's content and overwrite the existing files.
+
+Important notes: 
+- Always backup first
+FOR OLDER SITES with modified footer and working recaptcha key:
+- This will replace tpl.footer.php a heavily modified file usually.
+--To stay safe remove /tpl from the Patch folder 

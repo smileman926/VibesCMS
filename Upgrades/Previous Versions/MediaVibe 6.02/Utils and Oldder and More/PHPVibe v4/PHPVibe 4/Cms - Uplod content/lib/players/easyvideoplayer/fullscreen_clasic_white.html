@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Easy Video Player</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<script type="text/javascript" src="java/FWDEVPlayer.js"></script>
+		
+		<!-- Setup audio player-->
+		<script type="text/javascript">
+			FWDEVPUtils.onReady(function(){
+
+				FWDEVPlayer.useYoutube = "yes";
+				FWDEVPlayer.videoStartBehaviour = "pause";
+				
+				new FWDEVPlayer({		
+					//main settings
+					instanceName:"player1",
+					parentId:"myDiv",
+					mainFolderPath:"content",
+					skinPath:"clasic_skin_white",
+					displayType:"fullscreen",
+					facebookAppId:"213684265480896",
+					videoSourcePath:"content/videos/desktop.mp4, content/videos/mobile.mp4",
+					posterPath:"content/posters/mp4-poster.jpg, content/posters/mp4-poster-mobile.jpg",
+					showContextMenu:"yes",
+					addKeyboardSupport:"yes",
+					autoPlay:"no",
+					loop:"no",
+					maxWidth:600,
+					maxHeight:380,
+					volume:.8,
+					backgroundColor:"#000000",
+					posterBackgroundColor:"#0099FF",
+					//logo settings
+					showLogo:"yes",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoMargins:5,
+					//controller settings
+					showControllerWhenVideoIsStopped:"yes",
+					showVolumeScrubber:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showYoutubeQualityButton:"yes",
+					showFacebookButton:"yes",
+					showEmbedButton:"yes",
+					showFullScreenButton:"yes",
+					repeatBackground:"no",
+					controllerHeight:43,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:10,
+					spaceBetweenButtons:10,
+					scrubbersOffsetWidth:2,
+					timeOffsetLeftWidth:2,
+					timeOffsetRightWidth:3,
+					volumeScrubberWidth:80,
+					volumeScrubberOffsetRightWidth:0,
+					timeColor:"#FFFFFF",
+					youtubeQualityButtonNormalColor:"#FFFFFF",
+					youtubeQualityButtonSelectedColor:"#494949",
+					//embed window
+					embedWindowCloseButtonMargins:0,
+					borderColor:"#CDCDCD",
+					mainLabelsColor:"#000000",
+					secondaryLabelsColor:"#444444",
+					shareAndEmbedTextColor:"#444444",
+					inputBackgroundColor:"#828282",
+					inputColor:"#222222"
+				});
+			});
+		</script>
+		
+	</head>
+
+	<body style="background-color:#aaaaaa;">	
+		<div id="myDiv" style="margin:auto;"></div>
+	</body>
+</html>
+
+
+
+

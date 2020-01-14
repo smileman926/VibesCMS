@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Royal Video Player</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<script type="text/javascript" src="java/FWDEVPlayer.js"></script>
+	
+		<script type="text/javascript">	
+			/* Open player in popup. 
+			 * @param htmlPage:String - the html htmlPage with the video player, use one of the fullscreen exaples
+			 *              provided in the download files.
+			 * @param width:Number - the popup window width.
+			 * @param height:Number - the popup window height.
+			*/
+			function openPopup(htmlPage, width, height){
+				var left = parseInt((screen.width - width)/2);
+				var top =  parseInt((screen.height - height)/2);
+				
+				if(FWDEVPUtils.isMobile){
+					self.popupWindow = window.open(htmlPage);
+				}else{
+					self.popupWindow = window.open(htmlPage,"",'width=' + width + ', height=' + height + ', top=' + top + ', left=' + left);
+				}
+			};		
+		</script>
+	</head>
+
+	<body style="background-color:#999999; padding:0px; margin:0px;">	
+		<button onclick="openPopup('fullscreen_minimal_dark.html', 960, 550)">Open video in a popup window</button>
+	</body>
+</html>
+
+
+
+

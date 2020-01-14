@@ -1,0 +1,10 @@
+Thank you for upgrading to v5.92
+
+BEFORE you upgrade PLEASE:
+1. Backup!!!
+
+This small path fixes:
+- Some pagination links (old format removed)
+
+
+

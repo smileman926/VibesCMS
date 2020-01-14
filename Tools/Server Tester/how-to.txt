@@ -1,0 +1,6 @@
+Thank you for your interest in PHPVibe!
+
+Simply upload /tester to your server/hosting account via ftp and visit it in a browser.
+For the ffmpeg test:
+- upload an avi file as test.avi.
+- make /tester writeable.

@@ -1,0 +1,174 @@
+/* * PHPVibe v6  *  
+* Copyright MediaVibe.ro
+* http://www.phpvibe.com  
+* PHPVibe IS NOT A FREE SOFTWARE  
+* If you have downloaded this CMS from a website other  
+* than www.phpvibe.com, if you have received  
+* this CMS from someone who is not a representative of PHPVibe, you are involved in an illegal activity.  * The phpVibe team takes actions against all unlincensed websites using Google, local authorities and 3rd party agencies.  * Designed and built exclusively for sale at PHPVibe.com  
+*/
+/* RTL rules - Please contribute, mail us your rules for global availability */
+
+html {
+  direction: rtl;
+}
+body {
+  direction: rtl;
+}
+.flip.text-left, .text-left {
+  text-align: right;
+}
+.flip.text-right, .text-right {
+  text-align: left;
+}
+.list-unstyled {
+  padding-right: 0;
+  padding-left: initial;
+}
+.list-inline {
+  padding-right: 0;
+  padding-left: initial;
+  margin-right: -5px;
+  margin-left: 0;
+}
+.pull-right.flip {
+  float: left !important;
+}
+.pull-left.flip {
+  float: right !important;
+}
+
+.video, .video-data  {text-align:right;}
+.text-left {text-align:right;}
+.pull-right {
+    float: left!important;
+}
+.pull-left {
+    float: right!important;
+}
+.rur.pull-right {
+    float: right!important;
+}
+.user-box.pull-left, .user-box-txt, .img-owner .btn-group{
+    float: left!important;
+	text-align:left;
+}
+.logo-wrapper{
+    float: right!important;
+	text-align:left;
+}
+.header, .searchWidget .form-control, .aaa > a > i{
+    float: left!important;
+	text-align:left;
+}
+.searchWidget , .sidebar-nav li > a > span, .cats.cats-visible a,
+.nav-tabs>li{
+float:right;	
+}
+.user-quick {
+	float:left
+}
+.user-quick a {
+margin-right:20px!important	
+}
+a#openusr i {
+    margin-right: 3px!important;
+}
+.dropdown-menu>li>a:not(.grcreative) { margin: 0!important; text-align:right}
+.sidebar-nav ul li i {
+	margin: -3px 5px 0 18px;
+}
+.dropdown-menu li .icon:first-child, .dropdown-menu li>a .icon:first-child {
+    margin-left: 1em;
+	margin-right: 0!important;
+}
+.form-material .floating-label {
+	left:auto;
+	right:0;
+}
+.form-material.form-material-file .control-label:after {
+	left:10px;
+	right:auto;
+}
+.profile-hero h1 > .btn-group {
+    float: left;
+}
+.list-group .media .media-left, .list-group .media .pull-left {
+    padding-right: 2px;
+	padding-left: 20px;
+}
+.cats.cats-visible img {margin-left:9px;}
+.my-buzz span, .my-inbox span {left:4px; right:auto}
+.header {left:0!important; right:auto!important;}
+.user-quick, .user-quick > a, .user-media-actions {
+	text-align:left;
+}
+.user-quick a#openusr, a#openusr i {
+    margin-right: 10px;
+}
+.emoj .emoj-button{
+	left: 3px;
+	right: auto;
+}
+.emoj, .emoj .emoj-editor , #sidebar{
+	text-align:right
+}
+#media-info li, #media-description{
+	display:block;
+	width:100%; 
+	padding-top:10px
+}
+.aaa, .aaa > a , .song-icons .song-actions{
+text-align:left	
+}
+li.song > .media {
+    padding: 0 15px 0 4px;
+}
+.nav-tabs-line>li>a>i {
+	margin: 0 0 0 7px;
+}
+.p-dashboard #DashSidebar .nav-tabs-line>li>a, .p-manager #DashSidebar .nav-tabs-line>li>a {
+    padding: 10px 0;
+}
+.item-in-list .segment {
+    display: inline-block;
+    float: right;
+    margin-right: auto;
+	margin-left: 10px;
+	
+}
+.item-in-list .content-title {
+	padding-right:10px
+}
+.item-in-list .segment:last-child:not(:first-child) {
+    float: left;
+}
+
+#wrapper.haside .main-holder, #wrapper.haside .mediavibe-content {
+    padding: 5px 10px;
+}
+.jssocials-share:last-child {
+     margin: 0.3em 0.9em 0.3em 0;
+}
+.jssocials-share:first-child {
+     margin-right:0;
+}
+.sidebar-nav ,.sidebar-nav a {
+text-align:right	
+}
+@media (max-width: 540px) {
+.user-quick {
+    position: absolute;
+    top: 0;
+    right: auto;
+	left:0;
+}
+}
+@media (max-width: 990px) {
+.playlistvibe .list-next, .description-pull {
+    position: absolute;
+    top: 20%;
+    left: 5px;
+	right:auto;
+    bottom: auto;
+}
+}
